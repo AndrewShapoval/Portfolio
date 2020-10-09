@@ -6,14 +6,14 @@ export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Андрей Шаповал</h2>
-                <div className={style.rectangle}>
-                    <div className={style.square}></div>
-                    <div className={style.square}></div>
-                    <div className={style.square}></div>
-                    <div className={style.square}></div>
+                <h2 className={style.title}>Andrew Shapoval</h2>
+                <div className={style.socialIcons}>
+                    <div className={style.socialIcon}></div>
+                    <div className={style.socialIcon}></div>
+                    <div className={style.socialIcon}></div>
+                    <div className={style.socialIcon}></div>
                 </div>
-                <h3>2020 все права защищены</h3>
+                <span className={style.copyring}>2020 all rights reserved</span>
             </div>
         </div>
     )

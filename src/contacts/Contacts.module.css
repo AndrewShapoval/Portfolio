@@ -1,19 +1,36 @@
 .contactsBlock {
-    height: 100vh;
+    height: 70vh;
     background-color: #99d0fb;
 }
 
 .contactsContainer {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .title {
     background-color: #eeeef5;
 }
 
-.contacts {
+.contactForm {
+    width: 50%;
     border: 1px solid;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactForm input, .contactForm textarea {
+    width: 100%;
+}
+
+.submitBtn {
+    padding: 10px 20px;
+    background-color: darkorange;
+}
+
+@media screen and (max-width: 1124px) {
+    .contactForm {
+        width: 90%;
+    }
 }
