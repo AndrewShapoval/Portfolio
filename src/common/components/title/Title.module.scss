@@ -1,25 +1,28 @@
-.title {
-    margin-bottom: 30px;
-    position: relative;
-}
+@import "src/common/styles/sass/variables";
 
-.title h2 {
+.title {
+  margin-bottom: 30px;
+  position: relative;
+
+  h2 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     font-weight: 700;
-    color: #ffffff;
+    color: $textColor;
     margin: 0;
     line-height: 1.3;
     letter-spacing: 1px;
-}
-
-.title::before {
+  }
+  &::before {
     content: "";
     position: absolute;
-    background: #ffffff;
+    background: $primaryColor;
     width: 55px;
     height: 1px;
     bottom: -30px;
     left: 50%;
     transform: translate(-50%, 50%);
+  }
 }
+
+
