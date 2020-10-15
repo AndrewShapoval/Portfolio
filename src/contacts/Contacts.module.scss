@@ -1,0 +1,36 @@
+@import "src/common/styles/sass/variables.scss";
+
+.contactsBlock {
+  height: 40vh;
+  background-color: $bgSecondColor;
+
+  .contactsContainer {
+    flex-direction: column;
+    justify-content: center;
+
+    .contactForm {
+      width: 50%;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+
+      input, textarea {
+        width: 90%;
+      }
+
+      .submitBtn {
+        padding: 10px 20px;
+        background-color: $primaryColor;
+      }
+
+      @media screen and (max-width: 1124px) {
+        width: 90%;
+
+      }
+    }
+  }
+}
+
+
