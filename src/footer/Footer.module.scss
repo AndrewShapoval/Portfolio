@@ -1,11 +1,15 @@
 @import "src/common/styles/sass/variables";
 
 .footerBlock {
-    height: 30vh;
+    //height: 30vh;
     background-color: $bgColor;
+    display: flex;
     .footerContainer {
         flex-direction: column;
         justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
         .socialIcons {
             width: 250px;
             background-color: $bgColor;
