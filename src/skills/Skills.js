@@ -3,12 +3,12 @@ import style from './Skills.module.scss';
 import styleContainer from "../common/styles/Container.module.css";
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
-import HTMLIcon from "../assets/image/HTML.png"
-import JSIcon from "../assets/image/JS.jpg"
-import ReactIcon from "../assets/image/React.png"
-import CSSIcon from "../assets/image/CSS.png"
+import HTMLIcon from "../assets/image/telegram.svg"
+import JSIcon from "../assets/image/telegram.svg"
+import ReactIcon from "../assets/image/telegram.svg"
+import CSSIcon from "../assets/image/telegram.svg"
 
-export const Skills = (props) => {
+export const Skills = () => {
 
     const HTML = {
         backgroundImage: `url(${HTMLIcon})`,

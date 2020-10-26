@@ -1,12 +1,17 @@
 @import "src/common/styles/sass/variables";
 
 .mainBlock {
-  height: 90vh;
+  display: flex;
+  min-height: 90vh;
   background-color: $bgColor;
+  flex-direction: column-reverse;
+  justify-content: center;
 
   .mainContainer {
-    display: flex;
+    //display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: nowrap;
     @media screen and (max-width: 1100px) {
       flex-direction: column;
@@ -21,23 +26,23 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: $primaryColor;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 0.8;
         @media screen and (max-width: 690px) {
-          font-size: 30px
+          font-size: 27px
         }
       }
 
       h1 {
         font-family: 'Playfair Display', serif;
-        font-size: 100px;
+        font-size: 90px;
         font-weight: 500;
         color: $textColor;
         margin: 0;
         line-height: 1.1;
         letter-spacing: 1px;
         @media screen and (max-width: 690px) {
-          font-size: 75px
+          font-size: 67px
         }
       }
 
@@ -45,9 +50,9 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: $textColor;
-        font-size: 25px;
+        font-size: 22px;
         @media screen and (max-width: 690px) {
-          font-size: 19px
+          font-size: 17px
         }
       }
     }

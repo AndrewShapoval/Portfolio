@@ -3,15 +3,16 @@
 .title {
   margin-bottom: 30px;
   position: relative;
-
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: $textColor;
+  line-height: 1.3;
   h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: $textColor;
     margin: 0;
-    line-height: 1.3;
-    letter-spacing: 1px;
   }
   &::before {
     content: "";

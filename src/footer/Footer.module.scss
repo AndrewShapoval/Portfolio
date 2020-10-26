@@ -1,36 +1,74 @@
 @import "src/common/styles/sass/variables";
 
 .footerBlock {
-    //height: 30vh;
-    background-color: $bgColor;
-    display: flex;
-    .footerContainer {
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        .socialIcons {
-            width: 250px;
-            background-color: $bgColor;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            .socialIcon {
-                width: 50px;
-                height: 50px;
-                background-color: $primaryColor;
-            }
+  min-height: 300px;
+  background-color: $bgColor;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 100px 0 20px;
+
+    .socialIcons {
+      display: flex;
+      background-color: $bgColor;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 400px;
+      margin-top: 30px;
+      @media screen and (max-width: 505px) {
+        width: 100%;
+      }
+
+      a {
+        width: 60px;
+        height: 60px;
+        background-color: #ffc576;
+        border: 1px solid #4a4a4a;
+        border-radius: 50%;
+        display: inline-block;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: 1px solid transparent;
+
+        &:hover {
+          border: 1px solid $textColor;
+          transition: all 0.3s ease-in-out 0s;
         }
-        .copyright {
-            color: $textColor;
-            line-height: 14px;
-            font-size: 14px;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: 0.1px;
-            font-weight: 200;
+
+        img {
+          width: 60%;
         }
+      }
     }
+
+    //.socialIcon {
+    //    //@media screen and (max-width: 380px){
+    //    //    width: 50px;
+    //    //    height: 50px;
+    //    //}
+    //
+    //}
+
+    .copyright {
+      color: $textColor;
+      line-height: 14px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 0.1px;
+      font-weight: 200;
+      margin-top: 40px;
+      opacity: 0.6;
+    }
+  }
 }
 
