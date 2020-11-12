@@ -7,35 +7,27 @@ import HTMLIcon from "../assets/image/telegram.svg"
 import JSIcon from "../assets/image/telegram.svg"
 import ReactIcon from "../assets/image/telegram.svg"
 import CSSIcon from "../assets/image/telegram.svg"
+import Fade from 'react-reveal/Fade';
 
 export const Skills = () => {
 
-    const HTML = {
-        backgroundImage: `url(${HTMLIcon})`,
-    };
-
-    const JS = {
-        backgroundImage: `url(${JSIcon})`,
-    };
-
-    const ReactI = {
-        backgroundImage: `url(${ReactIcon})`,
-    };
-
-    const CSS = {
-        backgroundImage: `url(${CSSIcon})`,
-    };
+    const HTML = {backgroundImage: `url(${HTMLIcon})`};
+    const JS = {backgroundImage: `url(${JSIcon})`};
+    const ReactI = {backgroundImage: `url(${ReactIcon})`};
+    const CSS = {backgroundImage: `url(${CSSIcon})`};
 
     return (
-        <div className={style.skillsBlock}>
+        <div id={"skills"} className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title text={"Skills"}/>
-                <div className={style.skills}>
-                    <Skill title={"React"} icon={ReactI} description={"benbne;n lnerbonr"}/>
-                    <Skill title={"JavaScript"} icon={JS} description={"benbne;n lnerbonro tbnonb krtntb"}/>
-                    <Skill title={"HTML"} icon={HTML} description={"benbne;n lnerbonro tbnointb"}/>
-                    <Skill title={"CSS"} icon={CSS} description={"benbne;n lnerbonro tbnonb krtnbintb"}/>
-                </div>
+                <Fade bottom>
+                    <div className={style.skills}>
+                        <Skill title={"React"} icon={ReactI} description={"benbne;n lnerbonr"}/>
+                        <Skill title={"JavaScript"} icon={JS} description={"benbne;n lnerbonro tbnonb krtntb"}/>
+                        <Skill title={"HTML"} icon={HTML} description={"benbne;n lnerbonro tbnointb"}/>
+                        <Skill title={"CSS"} icon={CSS} description={"benbne;n lnerbonro tbnonb krtnbintb"}/>
+                    </div>
+                </Fade>
             </div>
         </div>
     );
