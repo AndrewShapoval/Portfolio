@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Footer.module.scss"
-import styleContainer from "../common/styles/Container.module.css";
-import {Title} from "../common/components/title/Title";
-import vk from "../assets/image/vk.svg"
-import telegram from "../assets/image/telegram.svg"
-import linkedin from "../assets/image/linkedin.svg"
-import gitHub from "../assets/image/github.svg"
+import styleContainer from "../../common/styles/Container.module.css";
+import {Title} from "../../common/components/title/Title";
+import vk from "../../assets/image/vk.svg"
+import telegram from "../../assets/image/telegram.svg"
+import linkedin from "../../assets/image/linkedin.svg"
+import gitHub from "../../assets/image/github.svg"
 
 
 export const Footer = () => {

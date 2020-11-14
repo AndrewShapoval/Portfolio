@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Main.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../../common/styles/Container.module.css'
 import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
