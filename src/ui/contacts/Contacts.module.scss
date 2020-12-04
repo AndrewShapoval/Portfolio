@@ -10,6 +10,8 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
+    position: relative;
+
 
     .form {
       display: flex;
@@ -51,7 +53,6 @@
 
       .formArea {
         height: calc(1.5em + .75em + 2px);
-        //padding: 4rem 15px;
 
 
         &:focus {
@@ -69,6 +70,18 @@
           border: 1px solid $primaryColor;
           transition: all 0.4s ease-in-out 0s;
         }
+      }
+
+      .messageStatus {
+        color: $primaryColor;
+        text-align: center;
+        margin-bottom: -20px;
+      }
+
+      .errorMessageStatus {
+        color: red;
+        text-align: center;
+        margin-bottom: -20px;
       }
 
       button[type="submit"] {

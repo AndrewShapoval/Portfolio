@@ -29,7 +29,6 @@ export const Nav = () => {
                 offset={0}
                 duration={500}
             >PROJECTS</Link>
-            {/*<a href="">CONTACTS</a>*/}
             <Link
                 activeClass={style.active}
                 to="contacts"
@@ -38,6 +37,14 @@ export const Nav = () => {
                 offset={0}
                 duration={500}
             >CONTACTS</Link>
+            <Link
+                activeClass={style.active}
+                to="links"
+                spy={true}
+                smooth={true}
+                offset={-348}
+                duration={500}
+            >LINKS</Link>
         </div>
     );
 }

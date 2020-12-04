@@ -10,7 +10,7 @@ import gitHub from "../../assets/image/github.svg"
 
 export const Footer = () => {
     return (
-        <div className={style.footerBlock}>
+        <div id={"links"} className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <Title text={"Andrew Shapoval"} />
                 <div className={style.socialIcons}>

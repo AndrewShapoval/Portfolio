@@ -6,11 +6,13 @@ import Fade from 'react-reveal/Fade';
 import {useDispatch, useSelector} from "react-redux";
 import {useFormik} from "formik";
 import {sendMessageTC} from "../../bll/app-reducer";
+import {Preloader} from "../../common/components/preloader/Preloader";
 
 export const Contacts = () => {
 
     const dispatch = useDispatch()
     const status = useSelector(state => state.app.status)
+    const appMessageStatus = useSelector(state => state.app.appMessageStatus)
 
     const formik = useFormik({
         initialValues: {
@@ -21,7 +23,7 @@ export const Contacts = () => {
         validate: (values) => {
             const errors = {};
             if (!values.email) {
-                errors.email = 'Required';
+                errors.email = 'Email is required';
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
                 errors.email = 'Invalid email address';
             }
@@ -29,6 +31,7 @@ export const Contacts = () => {
         },
         onSubmit: values => {
             dispatch(sendMessageTC(values))
+            formik.resetForm()
         },
     })
 
@@ -49,18 +52,29 @@ export const Contacts = () => {
                                placeholder="Your email"
                                onChange={formik.handleChange}
                                name={"email"} value={formik.values.email}/>
-                        {formik.errors.email ? <div className={style.errorEmail}>{formik.errors.email}</div> : null}
+
+                        {formik.touched.email && formik.errors.email ?
+                            <div className={style.errorEmail}>{formik.errors.email}</div> : null}
                         <textarea className={style.messageArea}
                                   placeholder="Message"
                                   onChange={formik.handleChange}
                                   name={"message"} value={formik.values.message}/>
+                        {appMessageStatus
+                            ? <div className={appMessageStatus.length < 32
+                                ? style.messageStatus
+                                : style.errorMessageStatus}>
+                                {appMessageStatus}
+                            </div>
+                            : null}
                         <button type="submit"
                                 value={"send"}
                                 onClick={formik.handleSubmit}
                         >Send message
                         </button>
+
                     </form>
                 </Fade>
+                {status == "loading" ? <Preloader/> : null}
             </div>
         </div>
     )

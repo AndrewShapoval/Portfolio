@@ -20,10 +20,10 @@ export const Projects = () => {
                     <div className={style.projects}>
                         <Project style={social} title={'Social network'}
                                  href={"https://github.com/AndrewShapoval/way-of-samurai"}
-                                 description={'kerknnglrw lwelnglrngn wlgnwlkgn wlkegnwelkgn'}/>
+                                 description={''}/>
                         <Project style={todolist} title={'Todolist'}
                                  href={"https://github.com/AndrewShapoval/it-incubator-todolist-ts-16"}
-                                 description={'jwbv wenfnfrjng jgjnrjg ergnrjkg rg erngnr egnegn'}/>
+                                 description={''}/>
                     </div>
                 </Fade>
             </div>

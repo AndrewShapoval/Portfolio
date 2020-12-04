@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: 'https://my-smtp-node-js-server.herokuapp.com/',
+    baseURL: "https://my-smtp-node-js-server.herokuapp.com/",
 })
 
 export const API = {

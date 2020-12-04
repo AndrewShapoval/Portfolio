@@ -6,7 +6,7 @@ export const Skill = (props) => {
         <div className={style.skill}>
             <div className={style.icon} style={props.icon}></div>
             <h3 className={style.title}>{props.title}</h3>
-            <div className={style.description}>{props.description}</div>
+            {/*<div className={style.description}>{props.description}</div>*/}
         </div>
     );
 }
