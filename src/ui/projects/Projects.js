@@ -19,7 +19,7 @@ export const Projects = () => {
                 <Fade bottom>
                     <div className={style.projects}>
                         <Project style={social} title={'Social network'}
-                                 href={"https://github.com/AndrewShapoval/way-of-samurai"}
+                                 href={"https://andrewshapoval.github.io/way-of-samurai/"}
                                  description={''}/>
                         <Project style={todolist} title={'Todolist'}
                                  href={"https://github.com/AndrewShapoval/it-incubator-todolist-ts-16"}
