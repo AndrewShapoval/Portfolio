@@ -30,7 +30,7 @@ export const Main = () => {
                         <ReactTypingEffect text="Front-end developer ReactJS"/>
                     </div>
                     <Tilt className="Tilt" options={{ max : 25 }}>
-                        <div className={style.photo}></div>
+                        <div className={style.photo}/>
                     </Tilt>
                 </div>
             </Fade>

@@ -41,8 +41,8 @@
 
         &:-webkit-autofill {
           border: 1px solid #4a4a4a;
-          -webkit-text-fill-color: #495057;
-          -webkit-box-shadow: 0 0 0 1000px #252257 inset;
+          -webkit-text-fill-color: #c5c5c5;
+          -webkit-box-shadow: 0 0 0 1000px $bgSecondColor inset;
           transition: background-color 5000s ease-in-out 0s;
 
           &:focus {
@@ -52,8 +52,9 @@
       }
 
       .formArea {
+        width: 100%;
         height: calc(1.5em + .75em + 2px);
-
+        padding: 15px;
 
         &:focus {
           border: 1px solid $primaryColor;
@@ -63,8 +64,10 @@
 
       .messageArea {
         min-height: 160px;
+        width: 100%;
         padding: 15px;
         resize: none;
+        position: relative;
 
         &:focus {
           border: 1px solid $primaryColor;
@@ -89,13 +92,17 @@
         align-self: center;
         background-color: transparent;
         margin-top: 30px;
+        cursor: pointer;
+        &:active {
+          opacity: 0.8;
+        }
       }
     }
   }
 }
 
 .errorEmail {
-  margin-top: -15px;
-  margin-bottom: 15px;
+  margin: -20px 0 0 12px;
   color: #f34f4f;
+  position: absolute;
 }

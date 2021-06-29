@@ -19,12 +19,16 @@ import AxiosIcon from "../../assets/image/Axios1.jpeg"
 import FormikIcon from "../../assets/image/Formik.png"
 import StorybookIcon from "../../assets/image/Storybook.png"
 import ReduxFormIcon from "../../assets/image/Redux-Form.png"
+import NextJSIcon from "../../assets/image/Nextjs.jpg"
+import NestJSIcon from "../../assets/image/NestJS.svg"
 import Fade from 'react-reveal/Fade';
 
 export const Skills = () => {
 
     const ReactI = {backgroundImage: `url(${ReactIcon})`};
     const ReduxI = {backgroundImage: `url(${ReduxIcon})`};
+    const NextJSI = {backgroundImage: `url(${NextJSIcon})`};
+    const NestJSI = {backgroundImage: `url(${NestJSIcon})`};
     const RestI = {backgroundImage: `url(${RestIcon})`};
     const JS = {backgroundImage: `url(${JSIcon})`};
     const TS = {backgroundImage: `url(${TSIcon})`};
@@ -48,6 +52,8 @@ export const Skills = () => {
                     <div className={style.skills}>
                         <Skill title={"React"} icon={ReactI} description={""}/>
                         <Skill title={"Redux"} icon={ReduxI} description={""}/>
+                        <Skill title={"NextJS"} icon={NextJSI} description={""}/>
+                        <Skill title={"NestJS"} icon={NestJSI} description={""}/>
                         <Skill title={"Rest API"} icon={RestI} description={""}/>
                         <Skill title={"JavaScript"} icon={JS} description={""}/>
                         <Skill title={"TypeScript"} icon={TS} description={""}/>
