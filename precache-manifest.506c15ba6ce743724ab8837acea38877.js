@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a866e8e1d20dcfa79a7ad137e4d0d9b7",
+    "revision": "21e68596693a109feda69001c2cc6b60",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "a9aec12f2ac5955d267c",
-    "url": "/Portfolio/static/css/main.c6db78d3.chunk.css"
+    "revision": "212bcbf5e76153c14228",
+    "url": "/Portfolio/static/css/main.ed84358e.chunk.css"
   },
   {
-    "revision": "ba0c3908578681510583",
-    "url": "/Portfolio/static/js/2.393c1c27.chunk.js"
+    "revision": "b35c025550f70bccec76",
+    "url": "/Portfolio/static/js/2.6f56b0b5.chunk.js"
   },
   {
     "revision": "bb4c43b27eb8c651f5099d24504f50ed",
-    "url": "/Portfolio/static/js/2.393c1c27.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.6f56b0b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9aec12f2ac5955d267c",
-    "url": "/Portfolio/static/js/main.fce0c53d.chunk.js"
+    "revision": "212bcbf5e76153c14228",
+    "url": "/Portfolio/static/js/main.7e446fa9.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
     "url": "/Portfolio/static/js/runtime-main.e440ee5a.js"
+  },
+  {
+    "revision": "0307d0b8661321e3666b551a8b7ea5e6",
+    "url": "/Portfolio/static/media/DietaGram.0307d0b8.svg"
   },
   {
     "revision": "c5c6e683d05c1b097511c08f2c71f49b",
@@ -38,6 +42,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d790230b088f8c99b4ed787b3b72123a",
     "url": "/Portfolio/static/media/MaterialUI.d790230b.png"
+  },
+  {
+    "revision": "c596eb94a634591dc42d2484c5b44ea2",
+    "url": "/Portfolio/static/media/NestJS.c596eb94.svg"
+  },
+  {
+    "revision": "dac62ae1b389acc7cd4bbc717963f864",
+    "url": "/Portfolio/static/media/Nextjs.dac62ae1.jpg"
   },
   {
     "revision": "05a3e30fdf60ebe9d00cf4725d44bd42",
@@ -86,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0b000652cc1576118f8822cb19a6bafd",
     "url": "/Portfolio/static/media/linkedin.0b000652.svg"
+  },
+  {
+    "revision": "4110fb564ca5ad36df38c66a7d8068a7",
+    "url": "/Portfolio/static/media/photo.4110fb56.jpg"
   },
   {
     "revision": "3f2590067056b4f0630d5b360e694fce",
