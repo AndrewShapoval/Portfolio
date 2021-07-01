@@ -7,12 +7,14 @@ import socialImage from "./../../assets/image/social.jpg"
 import todoImage from "./../../assets/image/todolist.jpg"
 import dietaGramImage from "./../../assets/image/DietaGram.svg"
 import Fade from 'react-reveal/Fade';
+import sndImage from "../../assets/image/snd.png";
 
 export const Projects = () => {
 
     const social = {backgroundImage: `url(${socialImage})`};
     const todolist = {backgroundImage: `url(${todoImage})`};
     const dietaGram = {backgroundImage: `url(${dietaGramImage})`};
+    const snd = {backgroundImage: `url(${sndImage})`};
 
     return (
         <div id={"projects"} className={style.projectsBlock}>
@@ -23,6 +25,11 @@ export const Projects = () => {
                         <Project style={dietaGram} title={'DietaGram'}
                                  href={"https://dg-web-repo-ebon.vercel.app/"}
                                  description={'Development of an ssr application on NextJS, localization, adaptive layout, SCSS'}/>
+
+                        <Project style={snd} title={'Snd News'}
+                                 href={"https://andrewshapoval.github.io/snd/"}
+                                 description={'React application layout'}/>
+
                         <Project style={social} title={'Social network'}
                                  href={"https://andrewshapoval.github.io/way-of-samurai/"}
                                  description={'Educational spa project using ReactJS, Redux, class components, typescript, Axios, redux-thunk'}/>
