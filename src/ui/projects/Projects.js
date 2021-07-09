@@ -25,7 +25,7 @@ export const Projects = () => {
                 <Fade bottom>
                     <div className={style.projects}>
                         <Project style={dietaGram} title={'DietaGram'}
-                                 href={"https://dietagram.com/"}
+                                 href={"http://dietagram.com/"}
                                  description={'Development of an ssr application on NextJS, localization, adaptive layout, SCSS'}/>
                         <Project style={snd} title={'Snd News'}
                                  href={"https://andrewshapoval.github.io/snd/"}
