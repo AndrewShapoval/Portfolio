@@ -3,11 +3,12 @@ import style from "./Projects.module.scss"
 import styleContainer from "../../common/styles/Container.module.css";
 import {Project} from "./project/Project";
 import {Title} from "../../common/components/title/Title";
+import Fade from 'react-reveal/Fade';
 import socialImage from "./../../assets/image/social.jpg"
 import todoImage from "./../../assets/image/todolist.jpg"
 import dietaGramImage from "./../../assets/image/DietaGram.svg"
-import Fade from 'react-reveal/Fade';
 import sndImage from "../../assets/image/snd.png";
+import GameOfLifeImage from "../../assets/image/GameOfLife.png";
 
 export const Projects = () => {
 
@@ -15,6 +16,7 @@ export const Projects = () => {
     const todolist = {backgroundImage: `url(${todoImage})`};
     const dietaGram = {backgroundImage: `url(${dietaGramImage})`};
     const snd = {backgroundImage: `url(${sndImage})`};
+    const GameOfLife = {backgroundImage: `url(${GameOfLifeImage})`};
 
     return (
         <div id={"projects"} className={style.projectsBlock}>
@@ -23,13 +25,14 @@ export const Projects = () => {
                 <Fade bottom>
                     <div className={style.projects}>
                         <Project style={dietaGram} title={'DietaGram'}
-                                 href={"https://dg-web-repo-ebon.vercel.app/"}
+                                 href={"https://dietagram.com/"}
                                  description={'Development of an ssr application on NextJS, localization, adaptive layout, SCSS'}/>
-
                         <Project style={snd} title={'Snd News'}
                                  href={"https://andrewshapoval.github.io/snd/"}
                                  description={'React application layout'}/>
-
+                        <Project style={GameOfLife} title={'Game of Life'}
+                                 href={"https://andrewshapoval.github.io/game-of-life/"}
+                                 description={'Game of Life using ReactJS and ImmerJS'}/>
                         <Project style={social} title={'Social network'}
                                  href={"https://andrewshapoval.github.io/way-of-samurai/"}
                                  description={'Educational spa project using ReactJS, Redux, class components, typescript, Axios, redux-thunk'}/>
