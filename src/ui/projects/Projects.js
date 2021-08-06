@@ -34,7 +34,7 @@ export const Projects = () => {
                                  href={"https://andrewshapoval.github.io/game-of-life/"}
                                  description={'Game of Life using ReactJS and ImmerJS'}/>
                         <Project style={social} title={'Social network'}
-                                 href={"https://andrewshapoval.github.io/way-of-samurai/"}
+                                 href={"https://github.com/AndrewShapoval/way-of-samurai"}
                                  description={'Educational spa project using ReactJS, Redux, class components, typescript, Axios, redux-thunk'}/>
                         <Project style={todolist} title={'Todolist'}
                                  href={"https://github.com/AndrewShapoval/it-incubator-todolist-ts-21"}
